@@ -1,7 +1,7 @@
 const service = require("./posts.service.js");
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
 
-async function postExists(req, res, next) {
+const postExists = async (req, res, next) => {
   const { postId } = req.params;
 
   const post = await service.read(postId);
@@ -12,17 +12,17 @@ async function postExists(req, res, next) {
   return next({ status: 404, message: `Post cannot be found.` });
 }
 
-async function create(req, res) {
+const create = async (req, res) => {
   // your solution here
   res.json({ data: "" });
 }
 
-async function update(req, res) {
+const update = async (req, res) => {
   // your solution here
   res.json({ data: "" });
 }
 
-async function destroy(req, res) {
+const destroy = async (req, res) => {
   // your solution here
   res.json({ data: "" });
 }

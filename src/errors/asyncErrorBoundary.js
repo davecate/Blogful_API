@@ -1,4 +1,4 @@
-function asyncErrorBoundary(delegate, defaultStatus) {
+const asyncErrorBoundary = (delegate, defaultStatus) => {
   return (request, response, next) => {
     Promise.resolve()
       .then(() => delegate(request, response, next))

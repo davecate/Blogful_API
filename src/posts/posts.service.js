@@ -1,18 +1,18 @@
 const knex = require("../db/connection");
 
-function create(post) {
+const create = (post) => {
   //your solution here
 }
 
-function read(postId) {
+const read = (postId) => {
   return knex("posts").select("*").where({ post_id: postId }).first();
 }
 
-function update(updatedPost) {
+const update = (updatedPost) => {
   //your solution here
 }
 
-function destroy(postId) {
+const destroy = (postId) => {
   //your solution here
 }
 

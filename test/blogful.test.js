@@ -3,6 +3,8 @@ const request = require("supertest");
 const app = require("../src/app");
 const knex = require("../src/db/connection");
 
+jest.setTimeout(15000)
+
 describe("Blogful Routes", () => {
   beforeAll(() => {
     return knex.migrate
