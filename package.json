@@ -13,7 +13,7 @@
     "start:dev": "nodemon src/server.js",
     "start:solution": "docker-compose up --build",
     "test": "jest",
-    "test:watch": "jest --watch --verbose --detectOpenHandles && dbreset",
+    "test:watch": "jest --watch --verbose --detectOpenHandles",
     "test:solution": "docker-compose build && docker-compose run api npm test"
   },
   "keywords": [],
