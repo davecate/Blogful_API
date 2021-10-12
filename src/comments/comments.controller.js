@@ -25,9 +25,8 @@ const listCommenterCount = async (req, res, next) => {
 }
 
 const read = async (req, res, next) => {
-  const knexInstance = req.app.get("db");
-  const { comment } = res.locals;
-  res.json({ data: comment });
+  const data = res.locals.comment
+  res.json({ data });
 }
 
 module.exports = {
