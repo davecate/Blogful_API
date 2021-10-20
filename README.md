@@ -2,7 +2,7 @@
 
 Bootcamp project: the back-end of a fictional blog app, Blogful. 
 
-Demonstrates the API capabilities of Node.js, and Knex.js, with database management via PostgreSQL/ElephantSQL and DBeaver.
+Demonstrates the API capabilities of Node.js, Express.js, and Knex.js, with database management via PostgreSQL/ElephantSQL and DBeaver.
 
 Links two datasets while adhering to the design principles of representational state transfer (REST) in order to meet project requirements.
 
